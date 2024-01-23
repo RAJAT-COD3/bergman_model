@@ -1,0 +1,5 @@
+pyodeint
+streamlit
+matplotlib
+pydantic
+numpy
