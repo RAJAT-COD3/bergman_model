@@ -1,4 +1,4 @@
-pyodeint
+scipy
 streamlit
 matplotlib
 pydantic
