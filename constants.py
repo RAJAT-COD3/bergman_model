@@ -1,6 +1,3 @@
-from pydantic import BaseModel, validator
-from typing import List
-
 
 class Constant:
     NUM_MEALS = 8
@@ -26,15 +23,5 @@ class Constant:
 
     MAX_TIME = 1440
 
-class ListMaxSize(BaseModel):
-    inputs: List[float]
-    max_size: int
-
-    @validator('inputs')
-    def check_max_size(cls, v, values, **kwargs):
-        max_size = values.get('max_size')
-        if max_size is not None and len(v) > max_size:
-            raise ValueError(f'List size must be less than or equal to {max_size}\nGot {len(v)}')
-        return v
 
 
