@@ -38,11 +38,16 @@ class Body():
         G, I, X = solution.T
         fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(8, 12))
         ax1.plot(t_points, G, label='Plasma Glucose')
-        ax1.set_title('Glucose Profile (mg/dl)')
+        ax1.set_title('Glucose Profile')
         ax1.legend()
+        ax1.set_xlabel('Time(seconds)')
+        ax1.set_ylabel('Glucose Concentration(mg/dl)')
+
         ax2.plot(t_points, I, label='Plasma Insulin')
-        ax2.set_title('\nInsulin Profile (mu/l)')
+        ax2.set_title('\nInsulin Profile')
         ax2.legend()
+        ax2.set_xlabel('Time')
+        ax2.set_ylabel('Insulin Concentration(mu/l)')
         plt.tight_layout()
         st.pyplot(fig)
 
