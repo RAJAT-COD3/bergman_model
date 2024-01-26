@@ -16,11 +16,13 @@ class Body():
                 m = (100 * dg[i] * c.Ag * t * exp(-t / c.tmax_I)) / (c.Vg * (pow(c.tmax_G, 2)))
         return m
 
-    def u_custom(self,t, meal_time: list, u_quantity: list, c):
-        insulin_time = meal_time
+    def u_custom(self,t,insulin_time, u_quantity: list, c):
+    
         for i in range(len(insulin_time)):
-            if i < len(insulin_time) and t >= insulin_time[i] and t < insulin_time[i + 1]:
+            if t >= insulin_time[i] and t < insulin_time[i+1]:
                 return u_quantity[i]
+        
+        else:
             
             return c.u
 

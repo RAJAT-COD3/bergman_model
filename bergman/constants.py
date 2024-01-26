@@ -2,7 +2,7 @@ from typing import List
 
 
 class Constant:
-    NUM_MEALS = 8
+
     I = 18.7813
     X = 0.0067
     G = 120.0
@@ -16,7 +16,7 @@ class Constant:
     n = 0.214
     Gb = 144.0
 
-    u = 5.82
+    u = 0.054
 
     Ag = 0.8
     tmax_I = 33.0
