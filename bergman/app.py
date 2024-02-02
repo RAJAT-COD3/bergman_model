@@ -64,7 +64,7 @@ def main():
             f"<h6 style='margin-bottom: 0;'>Insulin dosage {i + 1} Time</h6>",
             unsafe_allow_html=True
             )
-            insulin_inject_time = st.number_input(label="Seconds", key=f"insulin_time_{i}",max_value = float(1440), min_value=float(0),step=float(0.001))
+            insulin_inject_time = st.number_input(label="Seconds", key=f"insulin_time_{i}",max_value = 1440, min_value = 0)
             insulin_time.append(insulin_inject_time)
             st.markdown("<br>", unsafe_allow_html=True)
 
@@ -73,7 +73,7 @@ def main():
             f"<h6 style='margin-bottom: 0;'>Insulin Dosage {i + 1} Quantity</h6>",
             unsafe_allow_html=True
             )
-            insulin_dose = st.number_input(label="μL", key=f"insulin_dosage_{i}", min_value=0)
+            insulin_dose = st.number_input(label="μL", key=f"insulin_dosage_{i}", min_value=0,step = 0.001)
             u_quantity.append(insulin_dose)
             st.markdown("<br>", unsafe_allow_html=True)
 
