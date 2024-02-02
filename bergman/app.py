@@ -73,7 +73,7 @@ def main():
             f"<h6 style='margin-bottom: 0;'>Insulin Dosage {i + 1} Quantity</h6>",
             unsafe_allow_html=True
             )
-            insulin_dose = st.number_input(label="μL", key=f"insulin_dosage_{i}", min_value=float(0),step = step= None )
+            insulin_dose = st.number_input(label="μL", key=f"insulin_dosage_{i}", min_value=float(0), step=None)
             u_quantity.append(insulin_dose)
             st.markdown("<br>", unsafe_allow_html=True)
 
