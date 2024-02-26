@@ -77,8 +77,8 @@ def main():
             u_quantity.append(insulin_dose)
             st.markdown("<br>", unsafe_allow_html=True)
 
-    u_quantity.append(8552)
-    insulin_time.append(9999)
+    u_quantity.append(99999)
+    insulin_time.append(99999)
 
 
     c = Constants()

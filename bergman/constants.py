@@ -20,4 +20,8 @@ class Constants:
         self.tmax_G = 24.0
         self.Vg = 13.79
 
+<<<<<<< HEAD
         self.MAX_TIME = 1440
+=======
+        self.MAX_TIME = 1440
+>>>>>>> 133dde9b654b010b41a18135e019b7982a335b75
