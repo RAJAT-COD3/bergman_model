@@ -61,8 +61,6 @@ class Body:
         # ax3.set_ylabel('X Values')
         
         plt.tight_layout()
-<<<<<<< HEAD
         st.pyplot(fig)
-=======
         st.pyplot(fig)
->>>>>>> 133dde9b654b010b41a18135e019b7982a335b75
+
