@@ -62,5 +62,5 @@ class Body:
         
         plt.tight_layout()
         st.pyplot(fig)
-        st.pyplot(fig)
+    
 
