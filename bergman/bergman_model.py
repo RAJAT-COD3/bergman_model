@@ -45,7 +45,7 @@ class Body:
         ax1.plot(t_points, G, label='Plasma Glucose')
         ax1.set_title('Glucose Profile')
         ax1.legend()
-        ax1.set_xlabel('Time(seconds)')
+        ax1.set_xlabel('Time(minutes)')
         ax1.set_ylabel('Glucose Concentration(mg/dl)')
 
         ax2.plot(t_points, I, label='Plasma Insulin')
