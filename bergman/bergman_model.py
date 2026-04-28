@@ -51,7 +51,7 @@ class Body:
         ax2.plot(t_points, I, label='Plasma Insulin')
         ax2.set_title('\nInsulin Profile')
         ax2.legend()
-        ax2.set_xlabel('Time')
+        ax2.set_xlabel('Time(minutes)')
         ax2.set_ylabel('Insulin Concentration(mu/l)')
 
         # ax3.plot(t_points, X, label='X')
